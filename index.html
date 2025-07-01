@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect - Find Your Dream Job</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CareerConnect</h1>
+                <p>Find your dream job today</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">Career Resources</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login">Log In</button>
+                <button class="signup">Sign Up</button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Dream Job Today</h1>
+            <p>Thousands of jobs waiting for you to discover</p>
+            
+            <div class="search-box">
+                <div class="search-field">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Job title, keywords, or company">
+                </div>
+                <div class="search-field">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Location">
+                </div>
+                <button class="search-button">Search Jobs</button>
+            </div>
+            
+            <div class="popular-searches">
+                <span>Popular Searches: </span>
+                <a href="#">Software Engineer</a>
+                <a href="#">Marketing Manager</a>
+                <a href="#">Data Analyst</a>
+                <a href="#">Product Designer</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Browse Jobs by Category</h2>
+            <p>Find the job that fits your skills and interests</p>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Technology</h3>
+                    <p>1,245 jobs available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-briefcase-medical"></i>
+                    <h3>Healthcare</h3>
+                    <p>876 jobs available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Finance</h3>
+                    <p>932 jobs available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>543 jobs available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Hospitality</h3>
+                    <p>721 jobs available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design</h3>
+                    <p>412 jobs available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-jobs">
+        <div class="container">
+            <h2>Featured Jobs</h2>
+            <p>Hand-picked opportunities for you</p>
+            
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="job-type">Job Type:</label>
+                    <select id="job-type">
+                        <option value="all">All Types</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="contract">Contract</option>
+                        <option value="internship">Internship</option>
+                        <option value="remote">Remote</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="experience">Experience Level:</label>
+                    <select id="experience">
+                        <option value="all">All Levels</option>
+                        <option value="entry">Entry Level</option>
+                        <option value="mid">Mid Level</option>
+                        <option value="senior">Senior Level</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="salary">Salary Range:</label>
+                    <select id="salary">
+                        <option value="all">All Ranges</option>
+                        <option value="0-50">$0 - $50k</option>
+                        <option value="50-100">$50k - $100k</option>
+                        <option value="100+">$100k+</option>
+                    </select>
+                </div>
+                <button id="reset-filters">Reset Filters</button>
+            </div>
+            
+            <div class="job-listings" id="job-listings">
+                <!-- Jobs will be loaded here via JavaScript -->
+            </div>
+            
+            <button class="view-all">View All Jobs</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <p>What our candidates say about us</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="quote">
+                        "CareerConnect helped me find my dream job in just two weeks! The platform is easy to use and the job recommendations were spot on."
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        <div class="info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Product Manager at TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">
+                        "I was able to connect with top companies in my field through CareerConnect. The application process was seamless and I got multiple offers."
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        <div class="info">
+                            <h4>Michael Chen</h4>
+                            <p>Senior Developer at DataSystems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">
+                        "As a recent graduate, I was struggling to find opportunities. CareerConnect's entry-level job listings were exactly what I needed to start my career."
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jessica Martinez">
+                        <div class="info">
+                            <h4>Jessica Martinez</h4>
+                            <p>Marketing Associate at BrandWorks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="content">
+                <h2>Get Job Alerts Directly to Your Inbox</h2>
+                <p>Subscribe to our newsletter and be the first to know about new job opportunities</p>
+            </div>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About CareerConnect</h3>
+                    <p>CareerConnect is a leading job search platform connecting talented professionals with top employers worldwide.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Browse Companies</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section links">
+                    <h3>Job Seekers</h3>
+                    <ul>
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Job Search Tips</a></li>
+                        <li><a href="#">Resume Builder</a></li>
+                        <li><a href="#">Salary Calculator</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Career Street, San Francisco, CA</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@careerconnect.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 CareerConnect. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
